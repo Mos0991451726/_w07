@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid rgb(173, 173, 173);
+
+    margin-bottom: 0.5rem;
+}
+
+#background {
+    background-color: #010101;
+    width: 375px;
+    height: 812px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 5px 5px 8px 8px rgba(24, 24, 24, 0.25);
+    margin: 1rem 0;
+}
+
+#history {
+    height: 80%;
+}
+
+#total {
+    height: 20%;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100%;
+
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.span {
+    
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    width: 100%;
+    height: 100%;
+    font-size: 60px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+}
+
+#numpad {
+    margin: 0 10px;
+    display: grid;
+    gap: 10px;
+}
+
+#row1,
+#row2,
+#row3,
+#row4 {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#row5 {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin-bottom: 40px;
+}
+
+.button {
+    display: flex;
+    border-radius: 100%;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    font-weight: 600;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+.gray {
+    background-color: #A5A5A5;
+    color: black;
+    font-size: 28px;
+    font-weight: 800;
+    transition: background-color 0.3s ease;
+}
+
+.gray:hover {
+    background-color: #d1d1d1;
+}
+
+.gray:active {
+    background-color: #A5A5A5;
+}
+
+.black {
+    background-color: #343434;
+    color: white;
+    transition: background-color 0.3s ease;
+
+}
+
+.black:hover {
+    background-color: rgb(146, 146, 146);
+}
+
+.black:active {
+    background-color: #343434;
+}
+
+.zero {
+    padding-left: 35px;
+    width: 100%;
+    height: 100%;
+    border-radius: 135px;
+    justify-content: start;
+    background-color: #343434;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.zero:hover {
+    background-color: rgb(146, 146, 146);
+}
+
+.zero:active {
+    background-color: #343434;
+}
+
+.orange {
+    font-size: 28px;
+    background-color: #FF9F0A;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.orange:hover {
+    background-color: #fcbf63;
+}
+
+.orange:active {
+    background-color: #FF9F0A;
+}
+
+.specialorange {
+    font-size: 28px;
+    background-color: #FF9F0A;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.specialorange:hover {
+    background-color: #fcbf63;
+}
+
+.specialorange:active {
+    background-color: #FF9F0A;
+}
+
+.lastclick{
+    background-color: #FFFFFF;
+    color: #FF9F0A;
+}
